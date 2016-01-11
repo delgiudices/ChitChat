@@ -340,7 +340,7 @@ NSString* const WAMShouldHideStatusItem = @"WAMShouldHideStatusItem";
     NSUserNotification *notification = [NSUserNotification new];
     notification.title = messageBody[0];
     notification.subtitle = messageBody[1];
-    notification.identifier = messageBody[2];
+    notification.identifier = messageBody[1];
     [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:notification];
 }
 
